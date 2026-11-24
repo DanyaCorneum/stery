@@ -1,0 +1,17 @@
+{
+  "name": "strey",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Daniil",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "backend:dev": "npm --prefix backend run start"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
